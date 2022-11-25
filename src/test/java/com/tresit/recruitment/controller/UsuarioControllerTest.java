@@ -27,17 +27,17 @@ public class UsuarioControllerTest {
 
 	private static final String NOMBRE = "Benito";
 	private static final String APELLIDO = "Barraza";
-	private static final String LOGIN = "bbarraza";
-	private static final String CLAVE = "332211";
-	private static final String CORREO = "bbarraza@gmail.com";
-	private static final String TELEFONO = "+5699887766";
+//	private static final String LOGIN = "bbarraza";
+//	private static final String CLAVE = "332211";
+//	private static final String CORREO = "bbarraza@gmail.com";
+//	private static final String TELEFONO = "+5699887766";
 	
 	private static final String NOMBRE2 = "Carlos";
 	private static final String APELLIDO2 = "Carmona";
-	private static final String LOGIN2 = "ccarmona";
-	private static final String CLAVE2 = "443322";
-	private static final String CORREO2 = "ccarmona@gmail.com";
-	private static final String TELEFONO2 = "+5699776655";
+//	private static final String LOGIN2 = "ccarmona";
+//	private static final String CLAVE2 = "443322";
+//	private static final String CORREO2 = "ccarmona@gmail.com";
+//	private static final String TELEFONO2 = "+5699776655";
 
 	private static final List<Usuario> LISTA_USUARIOS = new ArrayList<>();
 
@@ -49,7 +49,7 @@ public class UsuarioControllerTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		MockitoAnnotations.initMocks(this);
+		MockitoAnnotations.openMocks(this);
 
 		usuario1 = new Usuario();
 		usuario2 = new Usuario();
@@ -107,10 +107,9 @@ public class UsuarioControllerTest {
 
 	}
 
-	/*@Test
+	@Test
 	void testBorrarUsuario() {
 		final int usuario = usuarioController.eliminar(ID);
 		assertThat(usuario).isEqualTo(1);
-
-	}*/	
+	}	
 }
